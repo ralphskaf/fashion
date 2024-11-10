@@ -1,0 +1,220 @@
+
+.image img{
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+/* .text{
+  padding-top: 13%;
+} */
+button {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #f9f9fc;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #ffffff ;
+  border-radius: 10px !important;
+  font-weight: bolder;
+
+}
+
+button:hover {
+  color: rgb(0, 0, 0); /* اللون الأسود للنص عند التمرير */
+  border:2px solid none; /* إزالة الحدود */
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); /* التدرج اللوني للخلفية */
+  cursor: pointer; /* إضافة مؤشر اليد للإشارة إلى أن الزر قابل للنقر */
+}
+
+button:active {
+  transform: scale(0.9);
+}
+/*  */
+.mask{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+ 
+  overflow: hidden;
+
+  left: 0;
+}
+.text{
+  transition: ease-out 0.5s;
+cursor: pointer;
+}
+.mask:hover .text{
+  background-color: rgba(0, 0, 0, 0.7); /* لون الخلفية الموحد */
+  /* min-height: 200px; الحد الأدنى للارتفاع ليكون حجم النصوص موحدًا */
+  padding: 5px;
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.text h1 {
+  font-size: 2rem; /* حجم الخط للنص */
+}
+.bg {
+  overflow: hidden !important;
+}
+.bg:hover img{
+  transform: scale(1.1) !important;
+
+}
+/* input */
+@media (max-width: 991px) {
+  input {
+     height: 70px;
+ }
+}
+input {
+ background: transparent;
+ border-radius: 10px;
+ box-shadow: 0.314px 5.992px 4.2px 0.8px rgba(116, 35, 247, 0.03);
+ border: 1px solid rgba(255, 255, 255, 0.18);
+ height: 50px;
+ padding: 30px;
+ color: #ffffff;
+ width: 100%;
+}
+.contact-form-group {
+ margin-bottom: 30px;
+}
+textarea {
+ /* padding: 30px; */
+ height: 80px;
+ background: transparent;
+ border-radius: 10px;
+ box-shadow: 0.314px 5.992px 4.2px 0.8px rgba(116, 35, 247, 0.05);
+ border: 1px solid rgba(255, 255, 255, 0.18);
+ color: #ffffff;
+ padding: 10px;
+ width: 100%;
+margin-top: 30px !important;
+}
+.contact-info-content ul li {
+ color: #ffffff;
+}
+/* life */
+/* إعدادات الحاوية */
+
+/* خلفية الصورة */
+.bgg-image {
+  background-image: url('../src/assets/bg.avif'); /* رابط الصورة */
+  background-size: cover;
+  background-position: center;
+  height: 30vh; /* ارتفاع الشاشة بالكامل */
+  position: relative;
+}
+
+/* تراكب للنص */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* تأثير تراكب نصف شفاف */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+
+
+
+/* نص في المنتصف */
+
+.bg-absolute{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: ease-out 0.5s;
+
+}
+div[class*="col"]:nth-of-type(4n + 1) .bg-absolute:hover {
+  background-color: #725ac169;
+}
+div[class*="col"]:nth-of-type(4n + 2) .bg-absolute:hover {
+  background-color: #6818e944;
+}
+div[class*="col"]:nth-of-type(4n + 3) .bg-absolute:hover {
+  background-color: #d025cd59;
+}
+div[class*="col"]:nth-of-type(4n + 4) .bg-absolute:hover {
+  background-color: #e976185d;
+}
+.video {
+  width: 100%;
+  height: 100vh;
+ 
+}
+
+video {
+ object-fit: cover;
+  width: 100%;   /* العرض الكامل */
+  height: 100%; /* الارتفاع الكامل */
+ 
+}
+/* navbar */
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+  font-weight: bolder;
+  font-size: large;
+}
+.navbar-nav .nav-link:hover{
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+.span{
+  /* color: #F0A8D0 !important; */
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+}
+.nav-link.active{
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.heading {
+  padding: 1rem 0;
+  font-size: 3.5rem;
+  text-align: center;
+  color: #fafafa;
+}
+@media only screen and (max-width: 400px) {
+  .heading {
+    padding: 1rem 0;
+    font-size: 2rem;
+    text-align: center;
+    color: #fafafa;
+  }
+}
+a{
+  text-decoration: none !important;
+ 
+  
+}
+.name-logo{
+  color: #ffffff !important;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.icons:hover{
+color: rgb(231, 176, 245);
+ 
+}
