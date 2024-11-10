@@ -65,7 +65,7 @@ export default function Home() {
             <div className="col-lg-6 text-white text pt-5">
               <div className="">
                 <h1 className="fw-bold mt-5">
-                  I’m Kristina <span className="span">mazanik</span>
+                  I’m Kristina <span className="span">Mazanik</span>
                 </h1>
                 <h2 className="mt-3">
                   A Fashion <span className="span">Stylist</span> based in
@@ -91,7 +91,7 @@ export default function Home() {
       {/*  */}
       <section className="py-5">
         <div className="container">
-          <h1 className="text-white text-center pb-md-3">Recent Work</h1>
+          <h1 className="text-center pb-md-3 span">Recent Work</h1>
           <div className="row py-3">
             {recentWork.map((item, index) => (
               <div
@@ -133,7 +133,9 @@ export default function Home() {
         <div className="container">
           <div className="text-center text-white">
             <div>
-              <h1>Available for Exclusive Fashion Projects Worldwide</h1>
+              <h1 className="span">
+                Available for Exclusive Fashion Projects Worldwide
+              </h1>
               <Link to="/contact">
                 <button className="my-5">Get in touch</button>
               </Link>
